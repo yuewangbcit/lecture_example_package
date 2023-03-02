@@ -19,11 +19,11 @@ public class FilesExample {
 //        } else {
 //            System.out.println("File not found");
 //        }
-//
+
 //        // create a new file or directory
 //        Path path2 = Path.of("src/week9/employee3.txt");
 //        try {
-//            Path newDirectory = Files.createDirectories(path2.getParent().resolve("src/week9/resources"));
+//            Path newDirectory = Files.createDirectories(path2.getParent().resolve("resources"));
 //            System.out.println("newDirectory = " + newDirectory);
 //
 //            Path newFile = Files.createFile(newDirectory.resolve("emptyFile.txt"));
@@ -31,7 +31,7 @@ public class FilesExample {
 //        } catch(IOException ex) {
 //            ex.printStackTrace();
 //        }
-//
+
 //        // write/read strings and bytes to/from files
 //        try {
 //            // write strings
@@ -64,7 +64,7 @@ public class FilesExample {
 //        } catch(IOException ex) {
 //            ex.printStackTrace();
 //        }
-//
+
 //        // try-with-resources example (using FileReader and BufferedReader)
 //        Path path3 = Path.of("src/week9/employee3.txt");
 //        try(BufferedReader br = Files.newBufferedReader(path3)) {
@@ -91,7 +91,7 @@ public class FilesExample {
 //        } catch (IOException ex) {
 //            ex.printStackTrace();
 //        }
-//
+
 //        // list files in a directory (using list method)
 //        Path path4 = Path.of("src/week9");
 //        try (var files = Files.list(path4)) {
@@ -116,7 +116,7 @@ public class FilesExample {
 //        } catch (IOException ex) {
 //            ex.printStackTrace();
 //        }
-//
+
 //        // move a file
 //        try {
 //            Path utfFile = Files.createTempFile("some", ".txt");
@@ -124,7 +124,7 @@ public class FilesExample {
 //        } catch (IOException ex) {
 //            ex.printStackTrace();
 //        }
-//
+
 //        // delete a file
 //        try {
 //            Path tempFile = Files.createTempFile("some", ".txt");
@@ -133,7 +133,7 @@ public class FilesExample {
 //        } catch (IOException ex) {
 //            ex.printStackTrace();
 //        }
-//
+
 //        // delete a non-empty directory
 //        Path path5 = Path.of("src/week9/123");
 //        try (Stream<Path> walk = Files.walk(path5)) {
@@ -148,16 +148,15 @@ public class FilesExample {
 //        } catch (IOException ex) {
 //            ex.printStackTrace();
 //        }
-//
-//        // serialization
-//        try (ObjectOutputStream oos =
-//            new ObjectOutputStream(new FileOutputStream("src/week9/object.txt"))) {
-//                String s = "Hello world, I’m a string about to be frozen in time";
-//            oos.writeObject(s);
-//        }
-//        catch (IOException ex) {
-//            ex.printStackTrace();
-//        }
+
+        // serialization
+        try (ObjectOutputStream oos =
+            new ObjectOutputStream(new FileOutputStream("src/week9/object.txt"))) {
+            String s = "Hello world, I’m a string about to be frozen in time";
+            oos.writeObject(s);
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
 
     }
 }

@@ -19,9 +19,7 @@ public class OrderedPair<K, V> {
         this.first = first;
     }
 
-    public V getSecond() {
-        return second;
-    }
+    public V getSecond() { return second; }
 
     public void setSecond(V second) {
         this.second = second;
