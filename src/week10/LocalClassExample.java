@@ -25,7 +25,7 @@ public final class LocalClassExample {
     public static void validatePhoneNumber(final String acceptablePattern,
                                            final String phoneNumber) {
 
-        final int numberLength = 10;
+        int numberLength = 10;
 
         /**
          * A local class!
@@ -39,7 +39,7 @@ public final class LocalClassExample {
              * @param phoneNumber a String
              */
             PhoneNumber(final String phoneNumber) {
-                // numberLength = 7; // What happens if we uncomment this? Why does that happen?
+//                numberLength = 7; // What happens if we uncomment this? Why does that happen?
 
                 String currentNumber = phoneNumber.replaceAll(regularExpression, "");
                 if (currentNumber.length() == numberLength) {
@@ -89,7 +89,6 @@ public final class LocalClassExample {
      * @param args unused.
      */
     public static void main(final String... args) {
-
         validatePhoneNumber("123-456-7890", "123-222-7890");
     }
 }

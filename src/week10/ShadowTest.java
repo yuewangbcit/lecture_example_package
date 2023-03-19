@@ -41,7 +41,6 @@ public class ShadowTest {
             System.out.println("x = " + x);
             System.out.println("this.x = " + this.x);
             System.out.println("ShadowTest.x = " + ShadowTest.this.x);
-            System.out.println("x = " + x);
         }
     }
 }

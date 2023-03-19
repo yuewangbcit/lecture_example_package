@@ -14,7 +14,6 @@ interface Counter {
  * @version 2020
  */
 public class LocalInnerClass {
-
     private int count = 0;
 
     /**
@@ -79,8 +78,8 @@ public class LocalInnerClass {
     public static void main(final String[] args) {
         LocalInnerClass localInnerClass = new LocalInnerClass();
 
-        Counter counterFirst = localInnerClass.getCounter("Local inner ");
-        Counter counterSecond = localInnerClass.getCounter2("Anonymous inner ");
+        Counter counterFirst = localInnerClass.getCounter("Local inner");
+        Counter counterSecond = localInnerClass.getCounter2("Anonymous inner");
 
         final int upperBound = 5;
         for (int i = 0; i < upperBound; i++) {

@@ -40,7 +40,6 @@ class Egg {
      * the Egg?
      */
     protected class Yolk {
-
         /**
          * Creates an object of type Yolk.
          */

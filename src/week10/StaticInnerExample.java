@@ -14,7 +14,6 @@ public class StaticInnerExample {
      * An inner class.
      */
     static class Inner {
-
         /**
          * The constructor of the inner class.
          */

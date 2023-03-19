@@ -60,6 +60,18 @@ public final class AnonymousConstructor {
                 System.out.println("In anonymous f()");
             }
         };
+
+        // The above anonymous class (without a name) is exactly the same as the class below
+//        public class MyBase extends Base {
+//            public MyBase(int number) {
+//                super(number);
+//                System.out.println("Inside instance initializer");
+//            }
+//
+//            public void f() {
+//                System.out.println("In anonymous f()");
+//            }
+//        }
     }
 
     /**
