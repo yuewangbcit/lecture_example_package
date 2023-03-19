@@ -30,7 +30,10 @@ public final class Numbers {
         for (int i = 0; i < size; i++) {
             intList[i] = generator.nextInt();
         }
-        Sorting.insertionSort(intList);
+        Sorting.selectionSort(intList);
+//        Sorting.insertionSort(intList);
+//        Sorting.mergeSort(intList, 0, intList.length-1);
+//        Sorting.quickSort(intList, 0, intList.length-1);
         System.out.println("\nYour numbers in sorted order...");
         for (int i = 0; i < size; i++) {
             System.out.print(intList[i] + "  ");
