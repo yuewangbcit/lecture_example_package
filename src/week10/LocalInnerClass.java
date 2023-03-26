@@ -55,7 +55,7 @@ public class LocalInnerClass {
    public Counter getCounter2(final String name) {
         return new Counter() {
 
-            /* Anonymous inner classes can have a "instance initializer" but no constructors! */
+            /* Anonymous inner classes can have an "instance initializer" but no constructors! */
             {
                 System.out.println("Counter()");
             }
