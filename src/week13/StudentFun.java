@@ -94,8 +94,11 @@ public final class StudentFun {
 
         }
         printStudentNames(studentsArrayList);
+        System.out.println();
         printStreamStudentNames(studentsArrayList);
+        System.out.println();
         printStreamGraduates(studentsArrayList);
+        System.out.println();
         System.out.println(getAverageGraduateAge(studentsArrayList));
     }
 }
